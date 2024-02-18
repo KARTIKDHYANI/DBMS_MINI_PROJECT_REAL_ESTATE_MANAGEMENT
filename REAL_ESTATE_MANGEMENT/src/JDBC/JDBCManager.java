@@ -46,5 +46,19 @@ public class JDBCManager {
         }
     }
 
+    public int executeUpdate(String query) throws SQLException {
+    Statement statement = null;
+    int rowsAffected = 0;
+    try {
+        statement = connection.createStatement();
+        rowsAffected = statement.executeUpdate(query);
+    } finally {
+        if (statement != null) {
+            statement.close();
+        }
+    }
+    return rowsAffected;
+}
+
     // Other methods for executing update statements, prepared statements, etc. can be added as needed
 }
