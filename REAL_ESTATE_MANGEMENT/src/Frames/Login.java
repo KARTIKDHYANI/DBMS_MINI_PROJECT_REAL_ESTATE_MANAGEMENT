@@ -59,6 +59,8 @@ public class Login extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
+        test = new javax.swing.JFrame();
+        jLabel5 = new javax.swing.JLabel();
         label1 = new javax.swing.JLabel();
         label2 = new javax.swing.JLabel();
         passcode = new javax.swing.JPasswordField();
@@ -176,9 +178,10 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(newuser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(create_userLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(create_userLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(newpasscode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(create_userLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(newpasscode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jButton3)
                 .addContainerGap(276, Short.MAX_VALUE))
@@ -282,6 +285,24 @@ public class Login extends javax.swing.JFrame {
         forgot_passwordLayout.setVerticalGroup(
             forgot_passwordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/home2.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+
+        javax.swing.GroupLayout testLayout = new javax.swing.GroupLayout(test.getContentPane());
+        test.getContentPane().setLayout(testLayout);
+        testLayout.setHorizontalGroup(
+            testLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, testLayout.createSequentialGroup()
+                .addGap(0, 298, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        testLayout.setVerticalGroup(
+            testLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(testLayout.createSequentialGroup()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 213, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -567,6 +588,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -582,6 +604,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField newpasscode;
     private javax.swing.JTextField newuser;
     private javax.swing.JPasswordField passcode;
+    private javax.swing.JFrame test;
     private javax.swing.JTextField userid;
     private javax.swing.JComboBox<String> usertype;
     // End of variables declaration//GEN-END:variables
